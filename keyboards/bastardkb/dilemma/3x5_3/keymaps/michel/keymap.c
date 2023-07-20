@@ -210,9 +210,9 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 // clang-format on
 #endif // ENCODER_MAP_ENABLE
 
-void pointing_device_init_user(void) {
-    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
-}
+// void pointing_device_init_user(void) {
+//     set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+// }
 
 
 // source: brom keymap.c
