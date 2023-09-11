@@ -20,11 +20,11 @@
 
 enum dilemma_keymap_layers {
     LAYER_BASE = 0,
-    LAYER_FUNCTION,
-    LAYER_NAVIGATION,
-    LAYER_POINTER,
-    LAYER_NUMERAL,
-    LAYER_SYMBOLS,
+    LAYER_FUNCTION = 1,
+    LAYER_NAVIGATION = 2,
+    LAYER_POINTER = 3,
+    LAYER_NUMERAL = 4,
+    LAYER_SYMBOLS = 5,
 };
 
 // Automatically enable sniping-mode on the pointer layer.
@@ -99,7 +99,7 @@ enum dilemma_keymap_layers {
   /** ├──────────────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────────────┤ */ \
                      ______________HOME_ROW_GACS_L______________,                           ______________HOME_ROW_GACS_R______________,               \
   /** ├──────────────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────────────┤ */ \
-        _______,     DRGSCRL,     SNIPING,     KC_BTN3,     XXXXXXX,           XXXXXXX,     KC_BTN3,     SNIPING,     DRGSCRL,     _______,            \
+        _______,     DRG_TOG,     SNIPING,     KC_BTN3,     XXXXXXX,           XXXXXXX,     KC_BTN3,     SNIPING,     DRG_TOG,     _______,            \
   /** ╰──────────────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────────────╯ */ \
                                   KC_BTN3,     KC_BTN2,     KC_BTN1,           KC_BTN1,     KC_BTN2,     KC_BTN3
   /**                          ╰───────────────────────────────────────╯ ╰───────────────────────────────────────╯                          */
