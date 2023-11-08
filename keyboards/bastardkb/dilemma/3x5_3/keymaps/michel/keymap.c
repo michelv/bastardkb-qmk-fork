@@ -160,6 +160,47 @@ enum dilemma_keymap_layers {
   /**                 ╰───────────────────────────╯ ╰───────────────────────────╯                          */
 
 /**
+ * \brief Combos.
+ */
+
+enum combos {
+  AQUOT_EXLM,
+  OCOMM_AT,
+  EDOT_HASH,
+  UP_DLR,
+  IY_PERC,
+  DF_CIRC,
+  HG_AMPR,
+  TC_ASTR,
+  NR_LPRN,
+  SL_RPRN,
+};
+
+const uint16_t PROGMEM AQUOT_combo[] = {KC_A, KC_QUOT, COMBO_END};
+const uint16_t PROGMEM OCOMM_combo[] = {KC_O, KC_COMM, COMBO_END};
+const uint16_t PROGMEM EDOT_combo[] = {KC_E, KC_DOT, COMBO_END};
+const uint16_t PROGMEM UP_combo[] = {KC_U, KC_P, COMBO_END};
+const uint16_t PROGMEM IY_combo[] = {KC_I, KC_Y, COMBO_END};
+const uint16_t PROGMEM DF_combo[] = {KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM HG_combo[] = {KC_H, KC_G, COMBO_END};
+const uint16_t PROGMEM TC_combo[] = {KC_T, KC_C, COMBO_END};
+const uint16_t PROGMEM NR_combo[] = {KC_N, KC_R, COMBO_END};
+const uint16_t PROGMEM SL_combo[] = {KC_S, KC_L, COMBO_END};
+
+combo_t key_combos[] = {
+  [AQUOT_EXLM] = COMBO(AQUOT_combo, KC_EXLM),
+  [OCOMM_AT] = COMBO(OCOMM_combo, KC_AT),
+  [EDOT_HASH] = COMBO(EDOT_combo, KC_HASH),
+  [UP_DLR] = COMBO(UP_combo, KC_DLR),
+  [IY_PERC] = COMBO(IY_combo, KC_PERC),
+  [DF_CIRC] = COMBO(DF_combo, KC_CIRC),
+  [HG_AMPR] = COMBO(HG_combo, KC_AMPR),
+  [TC_ASTR] = COMBO(TC_combo, KC_ASTR),
+  [NR_LPRN] = COMBO(NR_combo, KC_LPRN),
+  [SL_RPRN] = COMBO(SL_combo, KC_RPRN),
+};
+
+/**
  * \brief Add Home Row mod to a layout.
  *
  * Expects a 10-key per row layout.  Adds support for GACS (Gui, Alt, Ctl, Shift)
