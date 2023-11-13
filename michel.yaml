@@ -53,9 +53,9 @@ layers:
   - LCTL
   - LSFT
   - ''
-  - SCRL
-  - PSCR
-  - ''
+  - VOLU
+  - CW TOGG
+  - PAUS
   - ''
   - F11
   - ''
@@ -63,9 +63,9 @@ layers:
   - ''
   - ''
   - ''
-  - PAUS
-  - ''
-  - ''
+  - VOLD
+  - PSCR
+  - SCRL
   - ''
   - F12
   - ''
@@ -81,10 +81,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - WH L
+  - WH U
+  - WH D
+  - WH R
   - LGUI
   - LALT
   - LCTL
@@ -102,8 +102,8 @@ layers:
   - ''
   - INS
   - HOME
-  - PGDN
   - PGUP
+  - PGDN
   - END
   - ''
   - ''
