@@ -174,6 +174,8 @@ enum combos {
   TC_ASTR,
   NR_LPRN,
   SL_RPRN,
+  COMMDOT_DOUBLEARROW,
+  DOTP_ARROW,
 };
 
 const uint16_t PROGMEM AQUOT_combo[] = {KC_A, KC_QUOT, COMBO_END};
@@ -186,6 +188,8 @@ const uint16_t PROGMEM HG_combo[] = {KC_H, KC_G, COMBO_END};
 const uint16_t PROGMEM TC_combo[] = {KC_T, KC_C, COMBO_END};
 const uint16_t PROGMEM NR_combo[] = {KC_N, KC_R, COMBO_END};
 const uint16_t PROGMEM SL_combo[] = {KC_S, KC_L, COMBO_END};
+const uint16_t PROGMEM COMMDOT_combo[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM DOTP_combo[] = {KC_DOT, KC_P, COMBO_END};
 
 combo_t key_combos[] = {
   [AQUOT_EXLM] = COMBO(AQUOT_combo, KC_EXLM),
@@ -198,7 +202,24 @@ combo_t key_combos[] = {
   [TC_ASTR] = COMBO(TC_combo, KC_ASTR),
   [NR_LPRN] = COMBO(NR_combo, KC_LPRN),
   [SL_RPRN] = COMBO(SL_combo, KC_RPRN),
+  [COMMDOT_DOUBLEARROW] = COMBO_ACTION(COMMDOT_combo),
+  [DOTP_ARROW] = COMBO_ACTION(DOTP_combo),
 };
+
+void process_combo_event(uint16_t combo_index, bool pressed) {
+  switch(combo_index) {
+    case COMMDOT_DOUBLEARROW:
+      if (pressed) {
+        SEND_STRING("=>");
+      }
+      break;
+    case DOTP_ARROW:
+      if (pressed) {
+        SEND_STRING("->");
+      }
+      break;
+  }
+}
 
 /**
  * \brief Add Home Row mod to a layout.
