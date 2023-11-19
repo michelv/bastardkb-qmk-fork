@@ -204,7 +204,7 @@ combo_t key_combos[] = {
   [TC_ASTR] = COMBO(TC_combo, KC_ASTR),
   [NR_LPRN] = COMBO(NR_combo, KC_LPRN),
   [SL_RPRN] = COMBO(SL_combo, KC_RPRN),
-  [UH_CAPSWORD] = COMBO(UH_combo, UH_combo),
+  [UH_CAPSWORD] = COMBO(UH_combo, CW_TOGG),
   [COMMDOT_DOUBLEARROW] = COMBO_ACTION(COMMDOT_combo),
   [DOTP_ARROW] = COMBO_ACTION(DOTP_combo),
 };
