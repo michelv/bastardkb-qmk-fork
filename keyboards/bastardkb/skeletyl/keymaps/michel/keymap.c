@@ -63,6 +63,8 @@ enum dilemma_keymap_layers {
 #define _______________DEAD_HALF_ROW_______________ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 #define ______________HOME_ROW_GACS_L______________ KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX
 #define ______________HOME_ROW_GACS_R______________ XXXXXXX, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI
+#define ______________HOME_ROW_CAGS_L______________ KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT, XXXXXXX
+#define ______________HOME_ROW_CAGS_R______________ XXXXXXX, KC_LSFT, KC_LGUI, KC_LALT, KC_LCTL
 
 /*
  * Layers used on the Dilemma.
@@ -86,7 +88,7 @@ enum dilemma_keymap_layers {
   /** ╭──────────────────────────────────────────╮ ╭──────────────────────────────────────────╮ */ \
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,       \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
-        ______________HOME_ROW_GACS_L______________,     KC_VOLU, CW_TOGG, KC_PAUS, XXXXXXX, KC_F11,       \
+        ______________HOME_ROW_CAGS_L______________,     KC_VOLU, CW_TOGG, KC_PAUS, XXXXXXX, KC_F11,       \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
         _______________DEAD_HALF_ROW_______________,     KC_VOLD, KC_PSCR, KC_SCRL, XXXXXXX, KC_F12,       \
   /** ╰──────────────────────────────────────────┤ ├──────────────────────────────────────────╯ */ \
@@ -98,7 +100,7 @@ enum dilemma_keymap_layers {
   /** ╭──────────────────────────────────────────╮ ╭──────────────────────────────────────────╮ */ \
         QK_BOOT, EE_CLR,  XXXXXXX, DPI_MOD, S_D_MOD,     S_D_MOD, DPI_MOD, RGB_TOG, RGB_M_P, RGB_VAI,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
-        ______________HOME_ROW_GACS_L______________,     ______________HOME_ROW_GACS_R______________,      \
+        ______________HOME_ROW_CAGS_L______________,     ______________HOME_ROW_CAGS_R______________,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
         _______, DRG_TOG, SNIPING, KC_BTN5, KC_BTN4,     KC_BTN4, KC_BTN5, SNIPING, DRG_TOG, _______,      \
   /** ╰──────────────────────────────────────────┤ ├──────────────────────────────────────────╯ */ \
@@ -117,7 +119,7 @@ enum dilemma_keymap_layers {
   /** ╭──────────────────────────────────────────╮ ╭──────────────────────────────────────────╮ */ \
         _______________DEAD_HALF_ROW_______________,     XXXXXXX, KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
-        ______________HOME_ROW_GACS_L______________,     KC_CAPS, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT,      \
+        ______________HOME_ROW_CAGS_L______________,     KC_CAPS, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
         _______________DEAD_HALF_ROW_______________,     KC_INS,  KC_HOME, KC_PGUP, KC_PGDN, KC_END,       \
   /** ╰──────────────────────────────────────────┤ ├──────────────────────────────────────────╯ */ \
@@ -135,7 +137,7 @@ enum dilemma_keymap_layers {
   /** ╭──────────────────────────────────────────╮ ╭──────────────────────────────────────────╮ */ \
         KC_1,    KC_2,    KC_3,    KC_4,    KC_5,        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,         \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
-        KC_LBRC, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSLS,     ______________HOME_ROW_GACS_R______________,      \
+        KC_LBRC, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSLS,     ______________HOME_ROW_CAGS_R______________,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
         KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX, KC_SLSH,     _______________DEAD_HALF_ROW_______________,      \
   /** ╰──────────────────────────────────────────┤ ├──────────────────────────────────────────╯ */ \
@@ -153,7 +155,7 @@ enum dilemma_keymap_layers {
   /** ╭──────────────────────────────────────────╮ ╭──────────────────────────────────────────╮ */ \
         KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,     KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
-        KC_LCBR, XXXXXXX, XXXXXXX, XXXXXXX, KC_PIPE,     ______________HOME_ROW_GACS_R______________,      \
+        KC_LCBR, XXXXXXX, XXXXXXX, XXXXXXX, KC_PIPE,     ______________HOME_ROW_CAGS_R______________,      \
   /** ├──────────────────────────────────────────┤ ├──────────────────────────────────────────┤ */ \
         KC_RCBR, XXXXXXX, XXXXXXX, XXXXXXX, KC_QUES,     _______________DEAD_HALF_ROW_______________,      \
   /** ╰──────────────────────────────────────────┤ ├──────────────────────────────────────────╯ */ \
@@ -228,23 +230,23 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
 /**
  * \brief Add Home Row mod to a layout.
  *
- * Expects a 10-key per row layout.  Adds support for GACS (Gui, Alt, Ctl, Shift)
+ * Expects a 10-key per row layout.  Adds support for CAGS (Gui, Alt, Ctl, Shift)
  * home row.  The layout passed in parameter must contain at least 20 keycodes.
  *
  * This is meant to be used with `LAYER_ALPHAS_QWERTY` defined above, eg.:
  *
- *     HOME_ROW_MOD_GACS(LAYER_ALPHAS_QWERTY)
+ *     HOME_ROW_MOD_CAGS(LAYER_ALPHAS_QWERTY)
  */
-#define _HOME_ROW_MOD_GACS(                                            \
+#define _HOME_ROW_MOD_CAGS(                                            \
     L00, L01, L02, L03, L04, R05, R06, R07, R08, R09,                  \
     L10, L11, L12, L13, L14, R15, R16, R17, R18, R19,                  \
     ...)                                                               \
              L00,         L01,         L02,         L03,         L04,  \
              R05,         R06,         R07,         R08,         R09,  \
-      LGUI_T(L10), LALT_T(L11), LCTL_T(L12), LSFT_T(L13),        L14,  \
-             R15,  RSFT_T(R16), RCTL_T(R17), LALT_T(R18), RGUI_T(R19), \
+      LCTL_T(L10), LALT_T(L11), LGUI_T(L12), LSFT_T(L13),        L14,  \
+             R15,  RSFT_T(R16), RGUI_T(R17), LALT_T(R18), RCTL_T(R19), \
       __VA_ARGS__
-#define HOME_ROW_MOD_GACS(...) _HOME_ROW_MOD_GACS(__VA_ARGS__)
+#define HOME_ROW_MOD_CAGS(...) _HOME_ROW_MOD_CAGS(__VA_ARGS__)
 
 /**
  * \brief Add pointer layer keys to a layout.
@@ -274,7 +276,7 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [LAYER_BASE] = LAYOUT_wrapper(
-    POINTER_MOD(HOME_ROW_MOD_GACS(LAYOUT_LAYER_BASE))
+    POINTER_MOD(HOME_ROW_MOD_CAGS(LAYOUT_LAYER_BASE))
   ),
   [LAYER_FUNCTION] = LAYOUT_wrapper(LAYOUT_LAYER_FUNCTION),
   [LAYER_NAVIGATION] = LAYOUT_wrapper(LAYOUT_LAYER_NAVIGATION),
