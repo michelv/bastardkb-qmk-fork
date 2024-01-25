@@ -43,6 +43,7 @@ enum dilemma_keymap_layers {
 #    define DPI_MOD KC_NO
 #    define S_D_MOD KC_NO
 #    define SNIPING KC_NO
+#    define DRG_TOG KC_NO
 #endif // !POINTING_DEVICE_ENABLE
 
 // clang-format off
