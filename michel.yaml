@@ -2,8 +2,8 @@ layout: {qmk_keyboard: bastardkb/dilemma/3x5_3, qmk_layout: LAYOUT_split_3x5_3}
 layers:
   Dvorak:
   - ['''', ',', ., P, Y, F, G, C, R, L]
-  - [{t: A, h: ⌘ Command}, {t: O, h: ⌥ Alt}, {t: E, h: ^ Ctrl}, {t: U, h: ⇧ Shift}, I, D, {t: H, h: ⇧ RSFT}, {t: T, h: ^ Ctrl}, {t: N, h: ⌥ Alt}, {t: S, h: ⌘ Command}]
-  - [{t: ;, h: POINTER}, Q, J, K, X, B, M, W, V, {t: Z, h: MOUSE}]
+  - [{t: A, h: ⌘ Command}, {t: O, h: ⌥ Alt}, {t: E, h: ^ Ctrl}, {t: U, h: ⇧ Shift}, I, D, {t: H, h: ⇧ Shift}, {t: T, h: ^ Ctrl}, {t: N, h: ⌥ Alt}, {t: S, h: ⌘ Command}]
+  - [{t: ;, h: MOUSE}, Q, J, K, X, B, M, W, V, {t: Z, h: MOUSE}]
   - [Esc, {t: ↹ Tab, h: FUNCTION}, {t: ⌫ Backspace, h: NAVIGATION}, {t: ␣ Space, h: NUMBERS}, {t: ↩ Enter, h: SYMBOLS}, '`']
   Numbers:
   - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
@@ -18,7 +18,7 @@ layers:
   Function:
   - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
   - [⌘ Command, ⌥ Alt, ^ Ctrl, ⇧ Shift, '', $$vol_up$$, Caps Word, $$bri_up$$, '', F11]
-  - ['', '', '', '', '', $$vol_down$$, Print Screen, $$bri_down$$, '', F12]
+  - ['', '', '', '', '', $$vol_down$$, ⇧⌘F4, $$bri_down$$, '', F12]
   - ['', {t: ▽, type: trans}, '', '', '', '']
   Navigation:
   - ['', '', '', '', '', '', Mouse Wheel Left, Mouse Wheel Up, Mouse Wheel Down, Mouse Wheel Right]
